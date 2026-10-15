@@ -37,7 +37,7 @@
  .campaign::after { background:radial-gradient(ellipse 31% 22% at 50% 0%,color-mix(in srgb,var(--dark) 72%,transparent),transparent); }
  .campaign-seal { color:var(--champagne); }
  .campaign-copy { width:60%; }
- .essence-smile { top:45px; right:1%; width:47%; height:calc(100% - 45px); aspect-ratio:auto; border-radius:48% 48% 4px 48%; }
+ .essence-smile { top:45px; right:8%; width:auto; height:calc(100% - 90px); aspect-ratio:941 / 1672; border-radius:24px; }
  .essence-smile img { object-fit:contain; object-position:center top; }
 }
 @media(min-width:1800px) { .campaign-inner { padding-top:136px; } }
@@ -56,7 +56,7 @@
  .campaign::after { background:linear-gradient(90deg,color-mix(in srgb,var(--dark) 36%,transparent),transparent 38%); }
  .gallery-heading p { max-width:30rem; }
  .gallery-photo { aspect-ratio:.88; }
- .essence-smile { width:94%; margin-inline:6% 0; aspect-ratio:1; border-radius:48% 0 0 42%; }
+ .essence-smile { width:88%; margin-inline:6%; aspect-ratio:941 / 1672; border-radius:24px; }
  .essence-smile img { object-fit:contain; object-position:center top; }
 }
 .comparison,.comparison.vertical { width:min(100%,900px,calc((100dvh - 300px) * var(--comparison-ratio))); height:auto; }
