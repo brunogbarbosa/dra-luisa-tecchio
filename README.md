@@ -30,7 +30,7 @@ O build gera `.next/`. Não configure `dist` como diretório de saída.
 3. Instalação: `npm ci`. Build: `npm run build`. Diretório de saída: padrão do Next.js.
 4. Publique. Não há variáveis de ambiente obrigatórias.
 
-O projeto não usa Sites, banco de dados nem serviços privados. A URL de produção da Vercel é reconhecida automaticamente para metadados. Nenhuma imagem OG, social card ou imagem de compartilhamento é gerada.
+O projeto não usa Sites, banco de dados nem serviços privados. A URL de produção da Vercel é reconhecida automaticamente para metadados. A imagem de compartilhamento fornecida está em `public/images/luisa-tecchio-og.jpg`, otimizada para 1200 × 675 px (~103 KiB), com metadados Open Graph e Twitter. A composição original foi preservada.
 
 ## Conteúdo e identidade
 
@@ -51,6 +51,6 @@ A direção de identidade parte do monograma dourado e dos retratos fornecidos d
 
 WhatsApp: `+55 (55) 99208-7414`. Instagram: `https://www.instagram.com/dra.luisatecchio/`.
 
-As dez fotografias fornecidas foram convertidas integralmente para WebP, sem retoque, alteração de rosto, pele ou resultados. As quatro comparações lado a lado e as duas empilhadas preservam sua composição original. O modo de comparação usa as metades do próprio arquivo, sem modificar as imagens originais. Fotografias com enquadramentos diferentes não representam um alinhamento anatômico exato.
+As dez fotografias fornecidas foram convertidas integralmente para WebP, sem retoque, alteração de rosto, pele ou resultados. Cada uma das quatro seções com retrato utiliza uma fotografia distinta: frontal no hero, janela na essência, tablet na apresentação e sofá na experiência. As quatro comparações lado a lado e as duas empilhadas preservam sua composição original. O modo de comparação usa as metades do próprio arquivo, sem modificar as imagens originais. Fotografias com enquadramentos diferentes não representam um alinhamento anatômico exato.
 
 As animações respeitam a preferência de movimento reduzido do navegador. O menu e a galeria usam diálogos nativos, fechamento com Escape e retorno de foco.

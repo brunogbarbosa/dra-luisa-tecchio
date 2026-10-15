@@ -29,13 +29,15 @@
 .comparison.vertical { width:auto; height:100%; }
 .viewer-range input { accent-color:var(--champagne); min-height:44px; }
 @media(min-width:701px) {
- .campaign-portrait { inset:0 0 0 39%; }
+ .campaign-portrait { inset:0 0 0 26%; }
  .campaign-original { object-position:center top; }
  .campaign-portrait { mask-image:linear-gradient(90deg,transparent,black 29%); }
- .campaign::before { background:linear-gradient(90deg,var(--dark) 0%,var(--dark) 38%,color-mix(in srgb,var(--dark) 94%,transparent) 42%,color-mix(in srgb,var(--dark) 65%,transparent) 48%,color-mix(in srgb,var(--dark) 18%,transparent) 55%,transparent 63%),linear-gradient(0deg,color-mix(in srgb,var(--dark) 50%,transparent),transparent 25%); }
+ .campaign::before { background:linear-gradient(90deg,var(--dark) 0%,var(--dark) 29%,color-mix(in srgb,var(--dark) 96%,transparent) 34%,color-mix(in srgb,var(--dark) 72%,transparent) 40%,color-mix(in srgb,var(--dark) 20%,transparent) 49%,transparent 57%),linear-gradient(0deg,color-mix(in srgb,var(--dark) 50%,transparent),transparent 25%); }
  .campaign-editorial,.campaign-editorial em,.campaign-seal,.campaign-topline span:last-child { color:var(--gold-deep); text-shadow:none; }
+ .campaign::after { background:radial-gradient(ellipse 31% 22% at 50% 0%,color-mix(in srgb,var(--dark) 72%,transparent),transparent); }
+ .campaign-seal { color:var(--champagne); }
  .campaign-copy { width:60%; }
- .essence-smile { top:45px; right:1%; width:47%; aspect-ratio:1; border-radius:48% 48% 4px 48%; }
+ .essence-smile { top:45px; right:1%; width:47%; height:calc(100% - 45px); aspect-ratio:auto; border-radius:48% 48% 4px 48%; }
  .essence-smile img { object-fit:contain; object-position:center top; }
 }
 @media(min-width:1800px) { .campaign-inner { padding-top:136px; } }
@@ -47,7 +49,9 @@
 @media(max-width:700px) {
  .header { height:86px; padding-inline:6%; gap:14px; }
  .header .brand-type { font-size:10px; }
- .campaign-original { object-position:center 22%; filter:none; }
+ .campaign-portrait { inset:0 0 28% 0; }
+ .campaign-original { object-position:50% top; filter:none; }
+ .campaign-topline,.campaign-seal { display:none; }
  .campaign::before { background:linear-gradient(180deg,color-mix(in srgb,var(--dark) 65%,transparent),transparent 19%,color-mix(in srgb,var(--dark) 5%,transparent) 35%,color-mix(in srgb,var(--dark) 85%,transparent) 58%,var(--dark) 74%); }
  .campaign::after { background:linear-gradient(90deg,color-mix(in srgb,var(--dark) 36%,transparent),transparent 38%); }
  .gallery-heading p { max-width:30rem; }

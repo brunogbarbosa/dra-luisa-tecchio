@@ -18,7 +18,7 @@ export const site = {
   instagramHandle: '@dra.luisatecchio',
   philosophy: ['SEUS TRAÇOS.', 'SUA ESSÊNCIA.', 'SUA VERSÃO.'],
   colors: { paper: '#F7F4ED', sand: '#EBE5D7', goldDeep: '#89733D', ink: '#29271F', taupe: '#B39A58', champagne: '#E7D9A6', dark: '#201E18', wine: '#29271F', muted: '#746D5E' },
-  images: { hero: '/images/luisa-hero.webp', essence: '/images/luisa-essencia.webp', about: '/images/luisa-sobre.webp', beauty: '/images/luisa-experiencia.webp' },
+  images: { hero: '/images/luisa-retrato-frontal.webp', essence: '/images/luisa-retrato-janela.webp', about: '/images/luisa-sobre.webp', beauty: '/images/luisa-experiencia.webp' },
   procedures: [] as Procedure[],
   office: [] as { src: string; alt: string }[],
   testimonials: [] as Testimonial[],

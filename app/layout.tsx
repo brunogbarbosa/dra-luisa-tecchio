@@ -12,7 +12,14 @@ export const metadata: Metadata = {
   title: site.seo.title,
   description: site.seo.description,
   ...(site.seo.url ? { alternates: { canonical: '/' } } : {}),
-  openGraph: { title: site.seo.title, description: site.seo.description, locale: 'pt_BR', type: 'website' },
+  openGraph: {
+    title: site.seo.title, description: site.seo.description, locale: 'pt_BR', type: 'website',
+    images: [{ url: '/images/luisa-tecchio-og.jpg', width: 1200, height: 675, type: 'image/jpeg', alt: 'Dra. Luísa Tecchio — harmonização facial personalizada e natural em Ijuí, RS.' }],
+  },
+  twitter: {
+    card: 'summary_large_image', title: site.seo.title, description: site.seo.description,
+    images: ['/images/luisa-tecchio-og.jpg'],
+  },
 };
 export default function RootLayout({children}: Readonly<{children:React.ReactNode}>) {
   return <html lang="pt-BR"><body style={{
