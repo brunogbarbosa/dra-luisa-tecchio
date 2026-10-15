@@ -1,0 +1,58 @@
+/* Luísa Tecchio — all colors derive from data/site.ts. */
+.header { position:absolute; inset:0 0 auto; z-index:30; height:104px; display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:30px; padding:0 5%; color:var(--paper); background:none; border:0; box-shadow:none; backdrop-filter:none; }
+.header .brand-monogram,.header .brand-type small { color:var(--champagne); }
+.header .brand-type { font-size:12px; }
+.desktop-nav { display:flex; justify-content:center; gap:28px; }
+.nav-appointment { justify-self:end; display:flex; align-items:center; justify-content:center; gap:22px; min-height:48px; padding:12px 23px; border-radius:100px; background:var(--champagne); color:var(--dark); font-size:12px; transition:background .3s,transform .3s; }
+.nav-appointment:hover { background:var(--paper); transform:translateY(-2px); }
+.header .mobile-menu { display:none; color:var(--paper); background:none; backdrop-filter:none; border-color:var(--champagne); }
+.campaign { background:var(--dark); color:var(--paper); }
+.campaign::after { background:none; mix-blend-mode:normal; }
+.campaign-original { filter:none; transform:none; }
+.campaign-seal { color:var(--champagne); }
+.campaign-cta { background:var(--champagne); border-color:var(--champagne); color:var(--dark); }
+.campaign-title-line:nth-child(3), .campaign-editorial em { color:var(--champagne); }
+.campaign-kicker,.campaign-topline,.campaign-metrics,.campaign-signature { color:var(--champagne); }
+.campaign-organic { border-color:color-mix(in srgb,var(--champagne) 22%,transparent); }
+.campaign-organic-two { border-color:color-mix(in srgb,var(--champagne) 12%,transparent); }
+.essence-editorial,.ritual-chapter,.menu-dialog { background:var(--paper); }
+.essence-values,.social-chapter { background:var(--sand); }
+.essence-value { background:color-mix(in srgb,var(--paper) 85%,transparent); border-color:var(--paper); }
+.essence-value-icon { background:var(--champagne); color:var(--gold-deep); }
+.essence-editorial-description,.essence-editorial-prelude,.essence-value p { color:var(--muted); }
+.gallery-chapter,.closing-chapter,.footer,.result-dialog { background:var(--dark); }
+.gallery-photo,.comparison { background:var(--ink); }
+.gallery-heading p,.gallery-end p,.footer-main>div,.closing-bottom p,.closing-bottom>span { color:var(--sand); }
+.closing-chapter { background:radial-gradient(circle at 80% 20%,var(--ink),var(--dark) 58%); }
+.viewer-note { color:var(--champagne); }
+.comparison { max-width:100%; max-height:100%; flex:none; }
+.comparison.vertical { width:auto; height:100%; }
+.viewer-range input { accent-color:var(--champagne); min-height:44px; }
+@media(min-width:701px) {
+ .campaign-portrait { inset:0 0 0 39%; }
+ .campaign-original { object-position:center top; }
+ .campaign-portrait { mask-image:linear-gradient(90deg,transparent,black 29%); }
+ .campaign::before { background:linear-gradient(90deg,var(--dark) 0%,var(--dark) 38%,color-mix(in srgb,var(--dark) 94%,transparent) 42%,color-mix(in srgb,var(--dark) 65%,transparent) 48%,color-mix(in srgb,var(--dark) 18%,transparent) 55%,transparent 63%),linear-gradient(0deg,color-mix(in srgb,var(--dark) 50%,transparent),transparent 25%); }
+ .campaign-editorial,.campaign-editorial em,.campaign-seal,.campaign-topline span:last-child { color:var(--gold-deep); text-shadow:none; }
+ .campaign-copy { width:60%; }
+ .essence-smile { top:45px; right:1%; width:47%; aspect-ratio:1; border-radius:48% 48% 4px 48%; }
+ .essence-smile img { object-fit:contain; object-position:center top; }
+}
+@media(min-width:1800px) { .campaign-inner { padding-top:136px; } }
+@media(max-width:1100px) {
+ .header { grid-template-columns:1fr auto; }
+ .desktop-nav,.nav-appointment { display:none; }
+ .header .mobile-menu { display:grid; }
+}
+@media(max-width:700px) {
+ .header { height:86px; padding-inline:6%; gap:14px; }
+ .header .brand-type { font-size:10px; }
+ .campaign-original { object-position:center 22%; filter:none; }
+ .campaign::before { background:linear-gradient(180deg,color-mix(in srgb,var(--dark) 65%,transparent),transparent 19%,color-mix(in srgb,var(--dark) 5%,transparent) 35%,color-mix(in srgb,var(--dark) 85%,transparent) 58%,var(--dark) 74%); }
+ .campaign::after { background:linear-gradient(90deg,color-mix(in srgb,var(--dark) 36%,transparent),transparent 38%); }
+ .gallery-heading p { max-width:30rem; }
+ .gallery-photo { aspect-ratio:.88; }
+ .essence-smile { width:94%; margin-inline:6% 0; aspect-ratio:1; border-radius:48% 0 0 42%; }
+ .essence-smile img { object-fit:contain; object-position:center top; }
+}
+.comparison,.comparison.vertical { width:min(100%,900px,calc((100dvh - 300px) * var(--comparison-ratio))); height:auto; }
